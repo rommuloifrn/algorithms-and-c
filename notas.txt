@@ -1,0 +1,10 @@
+c annotations
+
+while(expr) stmt;
+	verifica a condição e executa as instruções. O código precisa modificar o incremento.
+
+do stmt while (expr);
+	executa as instruções e em seguida verifica a condição.
+
+for ( init ; expr ; iter ) stmt;
+	semelhante ao while simples, mas as informações ficam mais explícitas na sintaxe.	
