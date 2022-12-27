@@ -1,6 +1,9 @@
 #include <stdio.h>
 
 // ponteiros2: Demonstração de ponteiros
+
+// "*nome" se refere ao conteúdo do apontado pelo ponteiro, "nome" se refere ao valor
+// do ponteiro (endereço de memória do apontado), e "&nome" ao endereço de memória do ponteiro.
 int main() {
     int a;
     int *p;
