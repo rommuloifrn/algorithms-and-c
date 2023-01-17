@@ -7,8 +7,8 @@
 // resultado: a variável vira 50. Duh.
 
 /* Um ponteiro usado como parâmetro vai enviar o valor apontado.
-   Por algum motivo eu estava confuso com o funcionamento disso,
-   mas é até que simples. */
+ * Por algum motivo eu estava confuso com o funcionamento disso,
+ * mas é até que simples. */
 
 void f1 (int *p) {
     *p = 50;
