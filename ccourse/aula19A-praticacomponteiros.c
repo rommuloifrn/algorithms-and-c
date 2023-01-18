@@ -7,12 +7,12 @@ void print_vector(int a[], int tamanho) {
     printf("{ ");
     int i;
     for ( i=0; i<tamanho; i++)
-        printf("%d ", a[i]);
+        printf("%d (index %d), ", a[i], i);
     printf("}, largura: %d\n", tamanho);
 }
 
 int main() {
-    int capacidade = 3, tamanho = 0, a[capacidade]; 
+    int capacidade = 25, tamanho = 0, a[capacidade]; 
     int i;
 
 

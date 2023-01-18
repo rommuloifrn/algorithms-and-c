@@ -6,11 +6,28 @@ int append_int(int a[], int *tamanho, int capacidade, int x) {
     if (*tamanho == capacidade){
         return 0;
     }else{
-        a[(*tamanho)++] = x;
+        a[*tamanho] = x;
+        // outra forma: a[(*tamanho)++] = x;
+        // isso faria tamanho incrementar depois de atribuir x ao elemento.
+        *tamanho = *tamanho + 1;
         return 1;
     }
 }
+/* 
+Esta mierda abaixo não funciona pois ela incrementa o pointer tamanho direto, o que faz
+ele apenas seguir para o próximo endereço de memória. O que queremos é incrementar o
+tamanho do array, então precisamos colocar ele entre parênteses ou incrementar com x = x+1.
 
+int append_int(int a[], int *tamanho, int capacidade, int x) {
+    if (*tamanho == capacidade){
+        return 0;
+    }else{
+        a[*tamanho] = x;
+        tamanho++;
+        return 1;
+    }
+}
+*/
 int insert_int(int a[], int tamanho, int capacidade, int x, int index) {
     int i;
     if (tamanho == capacidade){
