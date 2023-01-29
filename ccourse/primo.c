@@ -1,12 +1,9 @@
 #include <stdio.h>
-int main() {
 
-    int a;
-    int i = 2;
+void primum(long long int a) {
+    unsigned long long int i = 2;
     int primo = 1;
-    scanf("%d", &a);
- 
-
+    
     while (i < a/2+1) {
         if (a%i == 0) {
             primo = 0;
@@ -14,11 +11,19 @@ int main() {
         }
         i++;
     }
+    if (primo == 1) {
+        printf("é primo.\n");
+    }else if(primo == 0){
+        printf("Não é primo. Divisor aqui: %llu\n", i);
+    }else{
+        printf("what the fuck?");
+    }
+}
 
-    if (a == 2){
-        primo = 1;
-        }
+int main() {
+    unsigned long long int a;
+    scanf("%llu", &a);
+    primum(a);
 
-    printf("%d\n", primo);
-
+    return 0;
 }
