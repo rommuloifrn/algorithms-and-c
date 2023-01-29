@@ -2,7 +2,7 @@
 #define SIMPLE_VECTOR_INT_H
 
 
-int append_int(int a[], int *tamanho, int capacidade, int x);
+void append_int(int a[], int *tamanho, int capacidade, int x, int *erro);
 
 void print_vector(int a[], int tamanho);
 

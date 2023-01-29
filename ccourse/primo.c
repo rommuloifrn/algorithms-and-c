@@ -1,10 +1,10 @@
 #include <stdio.h>
 int main() {
 
-    int a;
+    long long int a;
     int i = 2;
     int primo = 1;
-    scanf("%d", &a);
+    scanf("%lli", &a);
  
 
     while (i < a/2+1) {
