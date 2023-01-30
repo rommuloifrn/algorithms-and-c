@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-void primum(long long int a) {
+void primum(unsigned long long int a) {
     unsigned long long int i = 2;
     int primo = 1;
     
