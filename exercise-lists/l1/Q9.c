@@ -1,21 +1,21 @@
 #include <stdio.h>
 
+// A equação de tempo é T(F) = n+6
 void find(int a[], int tamanho, int x) {
-    int ishere = 0, i;
+    int ishere = 0, i;              // O(1)
 
     for (i=0; i<tamanho; i++) {
-        if (a[i] == x) {
-            ishere = 1;
-            break;
+        if (a[i] == x) {            // O(1)
+            ishere = 1;             // O(1) // condicional
+            break;                  // O(1)
         }
     }
 
-    if(ishere = 1) {
-        printf("Está aqui sim. Primeira aparição no índice %d\n", i);
+    if(ishere = 1) {                // O(1)
+        printf("Está aqui sim. Primeira aparição no índice %d\n", i); // O(1) // condicional
     }else{
-        printf("Eu não achei nada, não.\n");
+        printf("Eu não achei nada, não.\n");                          // O(1) // condicional
     }
-    
 }
 
 int main() {

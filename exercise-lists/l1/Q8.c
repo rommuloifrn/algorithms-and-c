@@ -1,12 +1,13 @@
 #include <stdio.h>
 
+// A equação de tempo é T(F) = n+3
 void find_minor(int a[], int tamanho) {
-    int minor = a[0], i;
+    int minor = a[0], i;                        // O(1)
     for (i=1; i<tamanho; i++) {
-        if (minor > a[i])
-            minor = a[i];
+        if (minor > a[i])                       // O(1)
+            minor = a[i];                       // O(1) // eh condicional
     }
-    printf("o menor elemento é %d\n", minor);
+    printf("o menor elemento é %d\n", minor);   // O(1)
 }
 
 int main() {
