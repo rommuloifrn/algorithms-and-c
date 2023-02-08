@@ -2,7 +2,7 @@
 #include <math.h>
 
 int main() {
-    printf("%f", log2(2));
+    printf("%f", log2(10));
 
     return 0;
 }
