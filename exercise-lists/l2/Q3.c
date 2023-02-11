@@ -27,4 +27,6 @@ int main() {
     printf("agora a massa inicial:\n");
     scanf("%Lf", &mi);
     printf("%.2Lf\n", massloss(t, mi));
+
+    return 0;
 }

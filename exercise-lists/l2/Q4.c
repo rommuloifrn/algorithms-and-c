@@ -21,11 +21,12 @@ void there_rep(int a[], int b[], int capacidade) {
     int i, x;
     // para cada elemento
     for(i=0; i<capacidade; i++){
-
+        // somente se o elemento em a[] não for zero
         if (a[i] != 0) {
+            // marque ocasião em b[]
             b[a[i]]++;
         }
-        
+        // caso haja mais de uma ocasião no marcador, retorne
         if (b[a[i]] > 1) {
             printf("Há um número repetido: é o %d\n", a[i]);
             return;
