@@ -3,3 +3,6 @@ output[0-9]*
 output.exe
 */output
 */output.exe
+*/*.swp
+*.swp
+.vscode
