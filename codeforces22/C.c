@@ -14,6 +14,10 @@ int main() {
     scanf("%d", &cases);
     for (int i=0; i<cases; i++) {
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> f19feac0e0fa4190b4498fc8727c39b67845ed9b
         int amount;
         scanf("%d", &amount);
         long long rams[amount];
@@ -27,6 +31,7 @@ int main() {
         int ram;
         int trueRams = 0;
         for (int i=0; i<amount; i++) {
+<<<<<<< HEAD
             scanf("%lld", &rams[i]);
         }
         // percorre o array procurando por um número do início até a posição atual.
@@ -38,6 +43,21 @@ int main() {
             }
         }
         printf("%d\n", trueRams);
+=======
+            scanf("%d", &ram);
+            rams[i] = ram;
+            
+        }
+        for (int i=0; i<amount; i++) {
+
+        }
+        printf("%d\n", trueRams);
+        printf("\n");
+
+
+
+
+>>>>>>> f19feac0e0fa4190b4498fc8727c39b67845ed9b
     }
 
     return 0;
