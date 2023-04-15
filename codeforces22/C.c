@@ -9,20 +9,11 @@ int itIsIn(long long arr[], int amount, long long identifier) {
     return 0;
 }
 
-int clearArray(long long arr[], int amount) {
-    for(int i=0, i<amount; i++) {
-        arr[i] = 0;
-    }
-}
-
 int main() {
     int cases;
 
     scanf("%d", &cases);
     for (int i=0; i<cases; i++) {
-
-
-
 
 
         int amount;
@@ -38,16 +29,13 @@ int main() {
         int trueRams = 0;
         for (int i=0; i<amount; i++) {
             scanf("%d", &ram);
-            if (!itIsIn(rams, amount, ram)) {
-                rams[i] = ram;
-                trueRams++;
-            }
+            rams[i] = ram;
             
         }
-        printf("%d\n", trueRams);
-        for(int i=0; i<amount; i++) {
-            printf("%lld, ", rams[i]);
+        for (int i=0; i<amount; i++) {
+
         }
+        printf("%d\n", trueRams);
         printf("\n");
 
 
