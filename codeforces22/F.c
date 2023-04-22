@@ -34,17 +34,24 @@ int main() {
         scanf("%hi", &x);
 
         if (position==0) {
-            for(int j=x-1; j<size+x-1; j++) { 
-                board[y-1][j] = 1; 
+            for(int j=x-1; j<size+x-1; j++) {
+                if(board[y-1][j] == 1 || (x+size-1)>10) {
+                    printf("N\n"); return 0;
+                }
+                board[y-1][j] = 1;
             }
         }else{
             for(int j=y-1; j<size+y-1; j++) { 
+                if(board[j][x-1] == 1 || (y+size-1)>10) {
+                    printf("N\n"); return 0;
+                }
                 board[j][x-1] = 1;
             }
         }
     }
 
-    printBoard(board);
+    //printBoard(board);
+    printf("Y\n");
 
     return 0;
 }
