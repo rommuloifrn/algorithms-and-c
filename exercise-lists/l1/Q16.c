@@ -7,7 +7,7 @@ int fC(int n){
         for ( j=1 ; j<=n ; j++ ){
             y+=j;
         }
-        x∗=y;
+        x*=y;
     }
     return x;
 }
