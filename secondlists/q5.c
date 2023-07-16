@@ -9,8 +9,11 @@ struct array_list{
 
 void array_list_increase_capacity(struct array_list *list){
     struct array_list* new_list;
-    new_list->data = malloc(20);
-    /*if (new_list->data == 0) {
+    // eu estava mexendo nos dados de um ponteiro somente declarado. Não estava apontando pra lugar nenhum! aí é de lascar a vida do homem.
+    // hahahaha ponteiros de ponteiros de ponteiros
+    new_list = (struct array_list*)malloc(sizeof(struct array_list));
+    new_list->data = (int*)malloc(sizeof(int)*list->size+10);
+    if (new_list == 0) {
         fprintf(stderr,"Error on memory allocation.\n");
         exit(-1);
     }
@@ -18,7 +21,7 @@ void array_list_increase_capacity(struct array_list *list){
         new_list[i] = list[i];
     }
     list = new_list;
-    list->capacity = list->capacity+10;*/
+    list->capacity = list->capacity+10;
     
 }   
 
@@ -64,6 +67,7 @@ int main(){
     array_list_print(list01);
     array_list_increase_capacity(list01);
     array_list_print(list01);
+    array_list_read_until(list01,-1);
 
     printf("\n");
     free(list01->data);
